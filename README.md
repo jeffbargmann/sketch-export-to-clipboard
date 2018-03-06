@@ -1,6 +1,8 @@
 # Clipboard export for Sketch
 Sketch plugin which exports selected layer to clipboard rasterized at @2x/@3x
 
+![screenshot](https://i.imgur.com/W5J3gPW.png)
+
 ## Keyboard shortcuts
 | Key | Action |
 |:-- |:--|
