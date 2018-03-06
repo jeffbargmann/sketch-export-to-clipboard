@@ -1,0 +1,34 @@
+{
+  "name" : "Export to Clipboard",
+  "description": "Exports selected layer to clipboard rasterized at @2x/@3x",
+  "author" : "Jeff Bargmann",
+  "authorEmail" : "jeffbargmann.git@gmail.com",
+  "homepage": "https://github.com/JeffBargmann/sketch-export-to-clipboard",
+  "version": "1.0.1",
+  "identifier" : "com.jeffbargmann.sketch.export-to-clipboard",
+  "compatibleVersion": 4,
+  "bundleVersion": 1,
+  "commands" : [
+    {
+      "script" : "ClipboardExportPNG2x.js",
+      "handler" : "onRun",
+      "shortcut" : "command shift c",
+      "name" : "Export Selected Layer @2x",
+      "identifier" : "clipboard-export-2x"
+    },
+    {
+      "script" : "ClipboardExportPNG3x.js",
+      "handler" : "onRun",
+      "shortcut" : "command shift option c",
+      "name" : "Export Selected Layer @3x",
+      "identifier" : "clipboard-export-3x"
+    }
+  ],
+  "menu" : {
+    "items" : [
+        "clipboard-export-2x",
+        "clipboard-export-3x"
+    ],
+    "title" : "Export to Clipboard"
+  }
+}
